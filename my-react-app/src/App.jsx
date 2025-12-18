@@ -13,7 +13,6 @@ function App() {
 
   useEffect(() => {
     setShowButton(page[0] === 0);
-    console.log(showButton);
   }, [page]);
 
   const fetchCharacters = async () => {

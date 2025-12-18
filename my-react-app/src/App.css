@@ -2,10 +2,11 @@
 
 .App {
   text-align: center;
-  background-color: black;
-  color: yellow;
-  font-family: "Star Jedi", sans-serif;
+  background-color: red;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   min-height: 100vh;
+  width: 100vw;
   padding: 20px;
 }
 .App h1 {
@@ -20,13 +21,18 @@
   padding: 20px;
 }
 
+.pokémon-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
 .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: #222;
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
+  width: flex;
   gap: 10px;
 }
 
@@ -46,18 +52,27 @@
   color: black;
 }
 
+.selected-card {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 10px;
+}
+
 .card-detail {
-  background-color: #111;
+  align-self: center;
+  background-color: white;
+  color: black;
   padding: 20px;
   border-radius: 10px;
   width: 350px;
-  text-align: left;
-  border: 2px solid yellow;
+  text-align: center;
+  border: 2px gold;
 }
 
 .card-detail h2 {
   text-transform: capitalize;
-  color: yellow;
+  color: gold;
 }
 
 button {
